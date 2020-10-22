@@ -5,7 +5,8 @@ manifest:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
     - name: ABC-fw
-      url-base: https://github.com/ChrisGammell
+      url-base: https://github.com/ContextualElectronics
+      
   projects:
     - name: zephyr
       remote: zephyrproject-rtos
