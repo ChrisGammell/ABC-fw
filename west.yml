@@ -1,25 +1,13 @@
 # The west manifest file for Zephyr based ABC board.
 
 manifest:
-  defaults:
-    remote: upstream
-
   remotes:
-    - name: upstream
+    - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
-
-  #
-  # Please add items below based on alphabetical order
+    - name: ABC-fw
+      url-base: https://github.com/ChrisGammell
   projects:
-    - name: cmsis
-      revision: 542b2296e6d515b265e25c6b7208e8fea3014f90
-      path: modules/hal/cmsis
-    - name: hal_nordic
-      revision: d8a6ea9695ddf792bb18bb6035c13b1daac5d79c
-      path: modules/hal/nordic
-    - name: nrf_hw_models
-      path: modules/bsim_hw_models/nrf_hw_models
-      revision: f86079a7333968f0ba71fe1266e241295a4e9943
-
-  self:
-    path: test
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: v2.0.0
+      import: true
