@@ -1,13 +1,15 @@
-# The west manifest file for Zephyr based ABC board.
-
 manifest:
   remotes:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
     - name: ABC-fw
       url-base: https://github.com/ChrisGammell
+  defaults:
+    remote: ABC-fw
   projects:
     - name: zephyr
       remote: zephyrproject-rtos
-      revision: v2.0.0
+      revision: v2.4.0
       import: true
+  self:
+    path: abc_fw
