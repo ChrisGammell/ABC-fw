@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zephyrproject-rtos
-      url-base: https://github.com/zephyrproject-rtos
+      url-base: https://github.com/bwasim
     - name: ABC-fw
       url-base: https://github.com/ChrisGammell
   defaults:
@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zephyr
       remote: zephyrproject-rtos
-      revision: v2.4.0
+      revision: ble-cell
       import: true
   self:
     path: abc_fw
