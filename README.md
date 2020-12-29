@@ -1,6 +1,17 @@
 # ABC-fw
-Firmware for the ABC board
+## Installation and usage 
 
-To build, use the command "west build -p auto -b nrf52840_ble_cell abc_fw/samples/hello_world/"
+How to get an ABC board working:
 
-Do this one level above this directory, if you have used the yaml script ("west init -m https://github.com/ChrisGammell/ABC-fw.git")
+1. Install Zephyr stuff (steps 1-4): https://buff.ly/3ohvK42
+2. west init -m https://github.com/ContextualElectronics/ABC-fw.git
+3. west update
+4. west build -p auto -b contextualelectronics_abc abc_fw/samples/blinky/
+5. west flash
+6. Revel in an ABC board happily blinking at you
+
+Note: This can be installed in a "fw" directory at the top level of an "ABC" directory, or similar. A normal directory looks like this
+
+* ABC
+  * fw
+  * hw
