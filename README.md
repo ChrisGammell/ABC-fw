@@ -1,6 +1,4 @@
 # ABC-fw
-Firmware for the ABC board. 
-
 ## Installation and usage 
 
 How to get an ABC board working:

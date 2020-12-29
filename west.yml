@@ -4,7 +4,6 @@ manifest:
       url-base: https://github.com/bwasim
     - name: ABC-fw
       url-base: https://github.com/ContextualElectronics
-
   defaults:
     remote: ABC-fw
   projects:
